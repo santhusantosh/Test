@@ -1,0 +1,26 @@
+
+<p id="notice"><%= notice %></p>
+<div class="container">
+<p>
+  <strong>Name:</strong>
+  <%= @movie.name %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @movie.rating %>
+</p>
+
+<p>
+  <strong>Date watched:</strong>
+  <%= @movie.date_watched %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @movie.language %>
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
+</div>
